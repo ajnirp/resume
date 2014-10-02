@@ -1,0 +1,225 @@
+\documentclass[a4paper,9pt]{article}
+
+\usepackage[margin=0.95in]{geometry}
+\usepackage{inconsolata}
+\usepackage[normalem]{ulem}
+% \usepackage{fontspec}
+\usepackage{charter}
+% \setromanfont{Times New Roman}
+\usepackage[hidelinks,backref]{hyperref} % clickable links and citations with no green borders
+\usepackage{amsmath}
+\usepackage{listings} % add source code snippets
+\usepackage{csquotes} % block quotes
+\usepackage{color} % it's a must these days / for the colors are fading
+\usepackage[dvips]{graphicx}
+\DeclareGraphicsExtensions{.png,.jpg}
+\setlength{\parindent}{0pt}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mydarkgray}{rgb}{0.4,0.4,0.4}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{myrust}{rgb}{0.77,0,0}
+\pagestyle{empty}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize\ttfamily,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,                    % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=C++,                    % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=none,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,                       % sets default tabsize to 2 spaces
+  % title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=red,
+  urlcolor=blue,
+  citecolor=green,
+  linktoc=page
+}
+
+\begin{document}
+
+% \vspace*{4.6cm}
+
+\textcolor{myrust}{\Huge{\centerline{Rohan Prinja}}}
+\vspace{31pt}
+% font size help: https://engineering.purdue.edu/ECN/Support/KB/Docs/LaTeXChangingTheFont
+
+% \large{\textsc{Areas of Interest}}\vspace{1.5pt}
+% \hrule\vspace{0.25cm}
+% \large{\textsc{Contact}}\vspace{1.5pt}
+% \hrule\vspace{0.25cm}
+\textcolor{myrust}{\large{\textsc{Contact}}}\textcolor{mygray}{\sout{\hfill}}\\\\
+\normalsize
+$\bullet$ \textbf{Address}: Room A706, Hostel 13, IIT Bombay, Powai 400076, Mumbai, India\\
+$\bullet$ \textbf{Email}: \href{mailto:rohanp@cse.iitb.ac.in}{\texttt{rohanp@cse.iitb.ac.in}}\\
+$\bullet$ \textbf{Homepage}: \href{http://www.cse.iitb.ac.in/~rohanp}{\texttt{www.cse.iitb.ac.in/$\sim$rohanp}}\\
+$\bullet$ \textbf{Github}: \href{https://github.com/wenderen}{\texttt{github.com/wenderen}}\\
+
+% \large{\textsc{About}}\vspace{1.5pt}
+% \hrule\vspace{0.25cm}
+\textcolor{myrust}{\large{\textsc{About}}}\textcolor{mygray}{\sout{\hfill}}\\\\
+\normalsize
+$\bullet$ Pursuing B. Tech with Honors in Computer Science and Engineering\\
+$\bullet$ \textbf{Research Interests:} \textbf{Graphics, Vision and Image Processing}, Graph Theory, Combintatorics\\
+$\bullet$ \textbf{Other Interests:} Game Development, Web development\\
+
+% \Large{\textsc{Scholastic Achievements}}\vspace{1.5pt}
+% \large{\textsc{Scholastic Achievements}}\vspace{1.5pt}
+% \hrule\vspace{0.25cm}
+\textcolor{myrust}{\large{\textsc{Scholastic Achievements}}}\textcolor{mygray}{\sout{\hfill}}\\\\
+\normalsize
+% $\bullet$ Pursuing \textbf{honors} in Computer Science and Engineering and \textbf{minor} in Systems and Controls Engineering\\
+$\bullet$ \textbf{All India Rank 53} in IIT-JEE 2011 among 500,000 candidates\\
+$\bullet$ \textbf{All India Rank 51} in AIEEE 2011 among over 1,200,000 candidates\\
+$\bullet$ Qualified for the \textbf{Indian National Physics Olympiad, 2010}\\
+$\bullet$ Qualified for the \textbf{Indian National Mathematics Olympiad, 2011}\\
+$\bullet$ Scored in the top 1\% in the state for the \textbf{Indian National Chemistry Olympiad, 2011}\\
+$\bullet$ \textbf{All India Rank 1} in the 5\textsuperscript{\emph{th}} \textbf{National Cyber Olympiad (2006)}\\
+$\bullet$ \textbf{All India Rank 28} in the 6\textsuperscript{\emph{th}} \textbf{National Cyber Olympiad (2007)}\\
+
+% \Large{\textsc{Research Experience}}\vspace{1.5pt}
+% \large{\textsc{Research Experience}}\vspace{1.5pt}
+% \hrule\vspace{0.25cm}
+\textcolor{myrust}{\large{\textsc{Research Experience}}}\textcolor{mygray}{\sout{\hfill}}\\\\
+\normalsize
+\textbf{$\bullet$ Augmented MPM for Physically Simulating Burning} \hfill \textit{Ongoing}\\
+\textcolor{mydarkgray}{\textit{Undergraduate Dissertation}}\hfill \textit{Guide}: \textcolor{mydarkgray}{Prof Parag Chaudhuri}\\
+We consider the problem of modifying the material-point method to physically simulate the burning of arbitrary solid objects. The solids are represented by tetrahedral meshes which are generated by DeLaunay mesh tetrahedralization. The evolution of the flame is done by the Navier-Stokes equations for fluid simulation within the Mantaflow solver framework. The deformation of the solid, smoke emission and residue formation are done separately. Each step of the physical simulation is output to a scene file and rendered by a raytracing program like PRMan or POV-Ray.\\\\
+% -- Physically modeling fire and incorporating burning, melting and residue formation for generic solid meshes\\
+% -- Using \textbf{tetgen} for DeLaunay mesh tetrahedralization, \textbf{shader-based OpenGL} for rapid mesh visualization, \textbf{mantaflow} as a fluid simulation solver, and \textbf{PRMan} as an offline raytracer renderer\\
+% -- Burning modeled using an augmented version of the Material Point Method for solid/fluid simulation\\
+% -- Flame modeled using Navier-Stokes equation for fluid simulation\\\\
+\textbf{$\bullet$ Bounding error-correcting codes} \hfill \textit{Ongoing}\\
+\textcolor{mydarkgray}{\textit{Research Project}}\hfill \textit{Guide}: \textcolor{mydarkgray}{Prof Ankur Kulkarni}\\
+We consider the problem of estimating an asymptotic upper bound on the cardinality of an error-correcting code for strings sent over a deletion channel. To obtain such a bound we restate the problem as one of finding a maximum independent set in a graph in which the vertices represent fixed-length strings over some finite alphabet, and edges connect two vertices if they have a common subsequence after deleting a fixed number of characters from each string. We use a theorem that relates the number of triangles in the graph to the maximum independent set size, so our problem is reduced to counting triangles in this graph given the length of each string and the deletion channel parameter.\\
+
+% TODO ADD LINKS TO THE SEMINARS
+
+% \large{\textsc{Seminars}}\vspace{1.5pt}
+% \hrule\vspace{0.25cm}
+\textcolor{myrust}{\large{\textsc{Seminars}}}\textcolor{mygray}{\sout{\hfill}}\\\\
+\normalsize
+$\bullet$ \textbf{GPU Accelerated Compositing in Google Chrome}\hfill\textit{Summer 2014}\\
+\textcolor{mydarkgray}{\textit{Web Platform Group, Samsung Electronics}}\hfill\textit{Guide}: \textcolor{mydarkgray}{Hyunki Baik, Senior Engineer}\\
+Traditionally, browser engines render webpages entirely on the CPU. By using the GPU, we can decrease webpage rendering time by parallelizing rendering and other tasks like Javascript execution. Beginning with an overview of the Chrome graphics stack, this seminar talks about the various ways in which Chrome reduces webpage rendering time by offloading part of the rendering pipeline onto the GPU, as well as the challenges in doing so. These challenges include non-uniform GPU support across devices, GPU-CPU synchronization issues and deciding if certain webpage content is more suitable for software rasterization or hardware-accelerated rasterization. This seminar was presented as part of an internship with the \textbf{Web Platform Group} at Samsung Electronics.\\\\
+$\bullet$ \textbf{Augmenting Hand-drawn Animation with 3D Physical Effects}\hfill\textit{Spring 2014}\\
+\textcolor{mydarkgray}{\textit{Advanced Computer Graphics course}}\hfill\textit{Guides}: \textcolor{mydarkgray}{Prof Parag Chaudhuri, Prof Sharat Chandran}\\
+Given a hand-drawn animation of a single human character, can we augment the animation by adding scene elements that interact realistically with the character? In this paper, by matching the animation to a member of a pre-existing motion-capture database, the 2D animation is reconstructed in 3D. Then, the interaction of the scene elements and the character is physically simulated in an animator like Maya or Blender. Finally, the entire frameset projected back into 2D. This paper was presented in a team of 2 as part of an \textbf{Advanced Computer Graphics} course.\\\\
+% $\bullet$ \textbf{Depixelizing Pixel Art}\\
+% \textit{Guides}: Prof Ajit Rajwade, Prof Suyash Awate\hfill \textit{Fall 2014}\\
+% Presented in a team of 2 as part of the Digital Image Processing course project\\
+$\bullet$ \textbf{Computational Humour}\hfill\textit{Spring 2014}\\
+\textcolor{mydarkgray}{\textit{Artificial Intelligence course}}\hfill\textit{Guide}: \textcolor{mydarkgray}{Prof Pushpak Bhattacharya}\\
+Computational humour is the problem of generating, identifying  and responding to humourous situations. It lies in the AI-complete category of problems, meaning that if it is solved, then computers can be said to be as intelligent as humans. In the seminar we analyse existing theories of humour and their associated mathematical models. We then survey a paper that uses machine learning to classify text fragments as humourous or not, a paper that algorithmically generates knock-knock jokes, and a paper that constructs pairs of graphs in order to generate conversational jokes. This seminar was presented in a team of 3 as part of an \textbf{Artificial Intelligence} course\\\\
+
+% \Large{\textsc{Internship Projects}}\vspace{1.5pt}
+% \large{\textsc{Work Experience}}\vspace{1.5pt}
+% \hrule\vspace{0.25cm}
+\textcolor{myrust}{\large{\textsc{Work Experience}}}\textcolor{mygray}{\sout{\hfill}}\\\\
+\normalsize
+$\bullet$ \textbf{Web Platform Group, Mobile Division, Samsung Electronics}\hfill \textit{Summer 2014}\\
+\textcolor{mydarkgray}{Software Development Intern}\hfill\textit{Suwon, Korea}\\
+$\;\circ$ Understood the Chromium graphics stack and presented a seminar to teammates\\
+$\;\circ$ Filed bugs; submitted patches and bugfixes for Chromium's 2D drawing library \textbf{Skia}\\
+$\;\circ$ Developed a \textbf{WebGL} browser game using \textbf{three.js} with a hand-written simple game engine that runs at a nearly steady 60 FPS on mobile. The game runs as a webapp on SBrowser and Chrome, and is controlled via the Samsung Wireless Gamepad, and in general any gamepad that supports the W3C-standardized \textbf{Gamepad API}\\
+$\;\circ$ Awarded a \textbf{pre-placement job offer}\\\\
+$\bullet$ \textbf{Chronus Software}\hfill \textit{Summer 2013}\\
+\textcolor{mydarkgray}{Software Development Intern}\hfill\textit{Chennai, India}\\
+$\;\circ$ \textbf{SSH Key Management}: Developed a CLI app in \textbf{Ruby} for privileged users (admins, ops team) to efficiently provision, rotate and revoke SSH key permissions for \textbf{AWS EC2} instances, using \textbf{AWS S3} as the keystore\\
+$\;\circ$ \href{https://github.com/wenderen/rtalk}{\textbf{RTalk}}: Group chat app in \textbf{Rails} with emoticons, clickable links and an option to export chat history as a text file. Users create chat rooms and invite friends by sharing a randomized room URL. Room and chat logs are destroyed when everyone leaves\\
+
+% \Large{\textsc{Teaching Experience}}\vspace{1.5pt}
+% \large{\textsc{Positions of Responsibility}}\vspace{1.5pt}
+% \hrule\vspace{0.25cm}
+\textcolor{myrust}{\large{\textsc{Positions of Responsibility}}}\textcolor{mygray}{\sout{\hfill}}\\\\
+\normalsize
+$\bullet$ \textbf{Speaker, Web and Coding Club, IIT Bombay}\\
+$\;\circ$ Conducted two \textbf{Python programming workshops} for beginners\\
+$\;\circ$ Conducted a \textbf{Haskell programming} \href{http://wenderen.github.io/wncc-sessions/#/}{workshop} for beginners\\\\
+$\bullet$ \textbf{Teaching Assistant, Computer Graphics course}\\
+$\;\circ$ Developing teaching material for the course, guiding students, grading papers\\
+
+% \Large{\textsc{Course Projects}}\vspace{1.5pt}
+% \large{\textsc{Course Projects}}\vspace{1.5pt}
+% \hrule\vspace{0.25cm}
+\textcolor{myrust}{\large{\textsc{Course Projects}}}\textcolor{mygray}{\sout{\hfill}}\\\\
+\normalsize
+\textbf{$\bullet$} \href{https://github.com/wenderen/depixelizing}{\textbf{Depixelizing Pixel Art}}\hfill\textit{Fall 2014}\\
+$\;\circ$ Implementing the research paper `Depixelizing Pixel Art' in a team of 2 for the Digital Image Processing course project\\
+$\;\circ$ The paper describes an algorithm for outputting a vector representation of a pixel art raster image\\
+\textbf{$\bullet$} \href{https://wenderen.github.io/renderman/}{\textbf{Rendering with Photorealistic Renderman}} \hfill \textit{Spring 2014}\\
+$\;\circ$ Wrote shaders and rendered raytraced scenes using Pixar's rendering software \textbf{PRMan}\\
+\textbf{$\bullet$} \href{https://github.com/wenderen/musicbox}{\textbf{Musicbox Animation}} \hfill \textit{Autumn 2013}\\
+$\;\circ$ Modeled, textured, posed and animated a dancing man in a music box from scratch with \textbf{OpenGL}\\
+$\;\circ$ Implemented Bezier curves for camera movement and keyframing for the animation\\
+\textbf{$\bullet$} \href{https://github.com/wenderen/mydraw}{\textbf{MS Paint clone}}\hfill \textit{Autumn 2013}\\
+$\;\circ$ Basic MS Paint clone made with OpenGL with support for floodfill tool and checkered patterns\\
+$\;\circ$ Implemented Bresenham's Line Drawing algorithm and other graphics algorithms\\
+\textbf{$\bullet$ Other Projects}\\
+$\;\circ$ Wrote a \href{https://github.com/wenderen/fmot}{terminal-based file manager} in C\texttt{++} for Linux, supporting standard file management tasks\\
+$\;\circ$ Built an Amazon/eBay/craigslist \href{https://github.com/wenderen/service-bazaar}{clone} in Rails tailored towards services\\
+$\;\circ$ Simulated a Rube Goldberg Machine in C\verb!++! using Box2D physics engine and OpenGL for rendering\\
+$\;\circ$ Implemented \textbf{Tonelli-Shanks} algorithm for \href{https://github.com/wenderen/ecc-asm}{elliptic curve cryptography} in MIPS Assembly\\
+$\;\circ$ Wrote an \href{https://github.com/wenderen/theorem-prover}{automated theorem prover} to search for proofs of arbitrary formulae using Propositional Calculus\\
+$\;\circ$ Implemented 8-point radix-2 Decimation in Frequency \href{https://github.com/wenderen/fft}{Fast Fourier Transform} on Atlys Spartan 6 FPGA using VHDL\\
+$\;\circ$ Used socket programming to design and implement a \textbf{minimal Dropbox clone} (distributed file storage)\\
+$\;\circ$ Built an interpreter and compiler that worked on \textbf{control flow graph} dumps of GCC\\
+$\;\circ$ Built a GUI and implemented heuristic game AIs (Minimax and Alpha-beta pruning) for \href{https://github.com/wenderen/chinese-checkers}{Chinese Checkers} in Racket\\
+
+% \Large{\textsc{Programming and Technical Skills}}\vspace{1.5pt}
+% \large{\textsc{Programming and Technical Skills}}\vspace{1.5pt}
+% \hrule\vspace{0.25cm}
+\textcolor{myrust}{\large{\textsc{Programming and Technical Skills}}}\textcolor{mygray}{\sout{\hfill}}\\\\
+\normalsize
+$\bullet$ \textbf{Knowledgeable about} C, C\verb!++!, OpenGL, WebGL, JavaScript, Ruby, Rails, Python\\
+$\bullet$ \textbf{Basic familiarity with} Rust, Lua, PRMan, SQL, Amazon AWS (S3, IAM)\\
+
+% \Large{\textsc{Additional Courses Taken}}\vspace{1.5pt}
+% \large{\textsc{Additional Courses Taken}}\vspace{1.5pt}
+% \hrule\vspace{0.25cm}
+% \textcolor{myrust}{% \large{\textsc{Programming and Technical Skills}}}\textcolor{mygray}{\sout{\hfill}}\\\\
+% \normalsize
+% \textbf{CS:} Digital Image Processing\textsuperscript{1}, Parallelizing Compilers\textsuperscript{1}, Parallel Computation\textsuperscript{1}, Advanced Computer Graphics, Computer Graphics, Machine Learning, Program Derivation\\
+% \textbf{Others:} Linear and Nonlinear Systems, Signals and Feedback Systems, Mathematical Structures for Systems and Controls\\
+% % \textsuperscript{1}\emph{With associated lab course}
+% \null\hfill\textsuperscript{1}\emph{Ongoing, will be completed by Dec 2014}\\
+% % see http://tex.stackexchange.com/a/75145 for an explanation of why \null\hfill works while \hfill doesn't
+
+% \Large{\textsc{Extra-curricular Activities}}\vspace{1.5pt}
+% \large{\textsc{Extra-curricular Activities}}\vspace{1.5pt}
+% \hrule\vspace{0.25cm}
+\textcolor{myrust}{\large{\textsc{Extra-curricular Activities}}}\textcolor{mygray}{\sout{\hfill}}\\\\
+\normalsize
+\textbf{$\bullet$ Contributing to} \href{https://github.com/servo/servo}{\textbf{Servo}}: Writing patches and bugfixes for Servo, Mozilla's experimental open-source parallelizing browser engine. Servo is written in \textbf{Rust}, a memory-safe and fast low-level language\\
+\textbf{$\bullet$} \href{https://github.com/wenderen/scrobbet}{\textbf{Scrobbet}}: Wrote a command-line app to extract and send song metadata to \textbf{Last.fm}, a artist-database / social-network for music listeners\\
+\textbf{$\bullet$} \href{https://github.com/wenderen/timeline-builder}{\textbf{Time Glider}}: Webapp that displays an interactive timeline of news articles related to a user's search term. The backend uses \textbf{NLTK} for news article summarization and \textbf{Apache Solr} for search indexing. Winner of the \textbf{second prize} at the \textbf{Yahoo! HackU 2013 IIT Bombay} event\\
+\textbf{$\bullet$} \href{https://github.com/wenderen/train-tracker}{\textbf{Train Tracker}}: A webapp for train travellers that uses PNR number to return real-time data about the upcoming train station (distance, time left, weather forecast, emergency numbers). Winner of the \textbf{Best Technical Hack} award at the \textbf{Yahoo! Hack India 2013 Hyderabad} event\\
+$\bullet$ Foreign languages: studied \textbf{French} as a second language for 7 years at the school level), and completed one-year courses in \textbf{German} (certified by \textbf{DAAD}) and \textbf{Mandarin} (certified by \textbf{Beijing Jiaotong University})\\
+$\bullet$ Selected to be part of the \textbf{Windows Internet of Things} developer program\\
+$\bullet$ Participated in MozBoot India - a program conducted by Mozilla to introduce programmers to working on bugs in large open-source projects\\
+$\bullet$ Built a self-controlled wall-following robot in a team of 3 in \textbf{Techfest 2012}, which was selected among the top-32 teams, as well as a remote-controlled \textbf{racing robot} in a team of 3 for \textbf{Trackmania 2012}, which navigated an obstacle course\\
+% $\bullet$ Completed one year of \textbf{National Service Scheme} (2011-2012). Performed \textbf{‘shramdaan’} in rural areas of Maharashtra, visited NGOs and assisted in the building of a \textbf{tubewell}\\
+% $\bullet$ \textbf{Debating:} reached the finals of Sardar Patel Institute of Technology, Mumbai's debate competition in SPACE (annual cultural festival) 2012
+
+\end{document}
